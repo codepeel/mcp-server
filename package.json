@@ -1,0 +1,60 @@
+{
+  "name": "@codepeel/mcp-server",
+  "version": "1.0.0",
+  "description": "CodePeel MCP Server — AI code review tools for Claude Code, Kiro, Cline, Roo, and other MCP-compatible agents",
+  "main": "dist/index.js",
+  "bin": {
+    "codepeel-mcp": "./dist/index.js",
+    "@codepeel/mcp-server": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "code-review",
+    "ai",
+    "codepeel",
+    "claude",
+    "kiro",
+    "cline",
+    "roo",
+    "security",
+    "bugs",
+    "linting"
+  ],
+  "author": "CodePeel <support@codepeel.com> (https://codepeel.com)",
+  "homepage": "https://codepeel.com/docs/mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hexivine/codepeel",
+    "directory": "codepeel-mcp"
+  },
+  "bugs": {
+    "url": "https://github.com/hexivine/codepeel/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.4.0"
+  }
+}
