@@ -1,10 +1,12 @@
 # CodePeel MCP Server
 
+[![codepeel/mcp-server MCP server](https://glama.ai/mcp/servers/codepeel/mcp-server/badges/score.svg)](https://glama.ai/mcp/servers/codepeel/mcp-server)
+
 AI code review tools for Claude Code, Cline, Roo, and other MCP-compatible agents.
 
 ## What it does
 
-When you're vibe coding with an AI agent, CodePeel acts as a second opinion — reviewing the generated code for bugs, security issues, and bad patterns before you commit.
+When you're vibe coding with an AI agent, CodePeel acts as a second opinion: reviewing the generated code for bugs, security issues, and bad patterns before you commit.
 
 ## Tools
 
@@ -75,7 +77,7 @@ You: Build a login form with validation
 Agent: [writes code, then calls review_code on its own output]
 Agent: I found a potential XSS issue in my implementation. Let me fix that...
 [calls fix_code, applies the fix]
-Agent: Here's the login form — I caught and fixed a security issue during generation.
+Agent: Here's the login form: I caught and fixed a security issue during generation.
 ```
 
 ## CLI Commands
